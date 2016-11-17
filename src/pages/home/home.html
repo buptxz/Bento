@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Home Page
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="goToProfile()">
+        <ion-icon name="person"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides [options]="{pager:true}" style="max-height:800px">
+    <ion-slide *ngFor="let item of menuList">
+      <ion-card>
+        <img src={{item.picture}} height="500px" alt={{item.name}}/>
+        <ion-card-content>
+          <ion-card-title>
+            {{item.name}}<br>
+            ${{item.price}}
+          </ion-card-title>
+          <button ion-button color="primary" block (click)="addToCart(item)">Add to Cart</button>
+
+          <!-- <div>
+            <ion-row>
+              <ion-col width-30>
+                <ion-item>
+                  <ion-label>QUANTITY</ion-label>
+                  <ion-select [(ngModel)]="q">
+                    <ion-option *ngFor="let quantity of quantities">{{quantity.title}}</ion-option>
+                  </ion-select>
+                </ion-item>
+              </ion-col>
+              <ion-col width-70>
+                <button ion-button color="primary" block (click)="addToCart(item.id, 1)" >Add to Cart</button>
+              </ion-col>
+            </ion-row>
+          </div> -->
+
+        </ion-card-content>
+
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+
+
+  <button ion-button block color="primary" (click)="addToMenu()">
+    Add to menu
+  </button>
+
+  <button ion-button block color="primary" (click)="goToCreate()">
+    Create a new Event
+  </button>
+
+  <button ion-button block color="primary" (click)="goToList()">
+    See your events
+  </button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-50>
+          <button (click)="goToLogin()" ion-button clear small full>Log In</button>
+        </ion-col>
+        <ion-col width-50>
+          <button (click)="goToSignup()" ion-button clear small full>Sign Up</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
