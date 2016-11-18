@@ -45,5 +45,9 @@ export class CartPage {
     this.data.removeFromCart(item);
   }
 
+  submitOrder(cart) {
+    this.data.submitOrder(cart, cart.length);
+  }
+
 
 }

@@ -15,10 +15,12 @@ export class Data {
   public currentUser: any;
   public menuList: any;
   public cart: any;
+  public order: any;
 
   constructor(public http: Http) {
     this.currentUser = firebase.auth().currentUser.uid;
     this.cart = firebase.database().ref('userProfile/' + this.currentUser + '/cart');
+    this.order = firebase.database().ref('userProfile/' + this.currentUser + '/order');
     this.menuList = firebase.database().ref('menu/');
   }
 
@@ -87,4 +89,12 @@ export class Data {
     this.cart.child(item.id).remove();
   }
 
+  submitOrder(cart, length) {
+    for (var i = 0; i < cart.length; i++) {
+      this.order.push({
+        name: cart[i].name,
+      })
+    }
+    this.cart.remove();
+  }
 }

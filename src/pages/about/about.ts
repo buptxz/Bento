@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
+import { ProfilePage } from '../profile/profile';
 /*
   Generated class for the About page.
 
@@ -15,8 +15,8 @@ export class AboutPage {
 
   constructor(public navCtrl: NavController) {}
 
-  ionViewDidLoad() {
-    console.log('Hello AboutPage Page');
+  goToProfile(){
+    this.navCtrl.push(ProfilePage);
   }
 
 }
