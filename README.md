@@ -1,10 +1,14 @@
-### Bento
-A bento app. Build by Ionic 2.
+## Bento
+
+#### A bento app. Build by Ionic 2.
+
+![Screenshot1](https://github.com/buptxz/bento/blob/master/Screenshot_1.png)
+![Screenshot2](https://github.com/buptxz/bento/blob/master/Screenshot_2.png)
 
 ####Features:
       1. Concise UI using Ionic meterial.
       2. Maintains realtime cart and order history tracking with the use of firebase.
-    
+
 ####Use Case Scienario:
       Local restaurant starts new business to offer fast lunch and dinner before library. 
       This app helps customers to book meal and restaurant to collect order information.
