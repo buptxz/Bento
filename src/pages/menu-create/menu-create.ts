@@ -17,6 +17,8 @@ import { ImagePicker } from 'ionic-native';
 })
 export class MenuCreatePage {
   itemPicture: any = null;
+  public name: any;
+  public price: any;
 
   constructor(public navCtrl: NavController, public menuData: MenuData) {
     this.navCtrl = navCtrl;

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ProfilePage } from '../profile/profile';
-import { EventCreatePage } from '../event-create/event-create';
-import { EventListPage } from '../event-list/event-list';
+// import { EventCreatePage } from '../event-create/event-create';
+// import { EventListPage } from '../event-list/event-list';
 import { MenuCreatePage} from '../menu-create/menu-create';
 
 import { LoginPage } from '../login/login';
@@ -49,13 +49,13 @@ export class HomePage {
     this.navCtrl.push(MenuCreatePage);
   }
 
-  goToCreate(){
-    this.navCtrl.push(EventCreatePage);
-  }
-
-  goToList(){
-    this.navCtrl.push(EventListPage);
-  }
+  // goToCreate(){
+  //   this.navCtrl.push(EventCreatePage);
+  // }
+  //
+  // goToList(){
+  //   this.navCtrl.push(EventListPage);
+  // }
 
   pushOrderPage() {
     this.navCtrl.push(OrderPage);

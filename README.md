@@ -6,7 +6,8 @@ A bento app. Build by Ionic 2.
       2. Maintains realtime cart and order history tracking with the use of firebase.
     
 ####Use Case Scienario:
-      Local restaurant starts new business to offer fast lunch and dinner before library. This app helps customers to book meal and restaurant to collect order information.
+      Local restaurant starts new business to offer fast lunch and dinner before library. 
+      This app helps customers to book meal and restaurant to collect order information.
 
 ####App Demo
       Use Ionic View to see the demo of the app: http://view.ionic.io/
