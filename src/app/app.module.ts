@@ -4,9 +4,9 @@ import { MyApp } from './app.component';
 
 // Import pages
 import { HomePage } from '../pages/home/home';
-import { EventCreatePage } from '../pages/event-create/event-create';
-import { EventDetailPage } from '../pages/event-detail/event-detail';
-import { EventListPage } from '../pages/event-list/event-list';
+// import { EventCreatePage } from '../pages/event-create/event-create';
+// import { EventDetailPage } from '../pages/event-detail/event-detail';
+// import { EventListPage } from '../pages/event-list/event-list';
 import { LoginPage } from '../pages/login/login';
 import { ProfilePage } from '../pages/profile/profile';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
@@ -21,7 +21,7 @@ import { AnonymousListPage } from '../pages/anonymous-list/anonymous-list';
 
 // Import providers
 import { AuthData } from '../providers/auth-data';
-import { EventData } from '../providers/event-data';
+// import { EventData } from '../providers/event-data';
 import { ProfileData } from '../providers/profile-data';
 import { Data } from '../providers/data';
 import { MenuData } from '../providers/menu-data';
@@ -30,9 +30,9 @@ import { MenuData } from '../providers/menu-data';
   declarations: [
     MyApp,
     HomePage,
-    EventCreatePage,
-    EventDetailPage,
-    EventListPage,
+    // EventCreatePage,
+    // EventDetailPage,
+    // EventListPage,
     LoginPage,
     ProfilePage,
     ResetPasswordPage,
@@ -53,9 +53,9 @@ import { MenuData } from '../providers/menu-data';
   entryComponents: [
     MyApp,
     HomePage,
-    EventCreatePage,
-    EventDetailPage,
-    EventListPage,
+    // EventCreatePage,
+    // EventDetailPage,
+    // EventListPage,
     LoginPage,
     ProfilePage,
     ResetPasswordPage,
@@ -70,7 +70,7 @@ import { MenuData } from '../providers/menu-data';
   ],
   providers: [
     AuthData,
-    EventData,
+    // EventData,
     ProfileData,
     Data,
     MenuData
