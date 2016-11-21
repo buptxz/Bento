@@ -2,8 +2,8 @@
 
 #### A bento app. Build by Ionic 2.
 
-![Screenshot1](https://github.com/buptxz/bento/blob/master/Screenshot_1.png)
-![Screenshot2](https://github.com/buptxz/bento/blob/master/Screenshot_2.png)
+<img src="https://github.com/buptxz/bento/blob/master/Screenshot_1.png" width = 300>
+<img src="https://github.com/buptxz/bento/blob/master/Screenshot_2.png" width = 300>
 
 ####Features:
       1. Concise UI using Ionic meterial.
