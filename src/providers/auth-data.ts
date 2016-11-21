@@ -10,7 +10,6 @@ export class AuthData {
 
   constructor() {
     this.fireAuth = firebase.auth(); // We are creating an auth reference.
-
     // This declares a database reference for the userProfile/ node.
     this.userProfile = firebase.database().ref('/userProfile');
   }
@@ -61,7 +60,7 @@ export class AuthData {
   getUser(){
     return this.fireAuth.currentUser;
   }
-  
+
   createAnonymousUser(): any {
     return this.fireAuth.signInAnonymously();
   }

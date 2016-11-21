@@ -4,7 +4,7 @@ import { StatusBar } from 'ionic-native';
 
 // import { HomePage } from '../pages/home/home';
 // import { LoginPage } from '../pages/login/login';
-// import { TabsPage } from '../pages/tabs/tabs';
+import { TabsPage } from '../pages/tabs/tabs';
 // import { MenuCreatePage } from '../pages/menu-create/menu-create';
 import { LandingPage } from '../pages/landing/landing';
 import { AnonymousListPage } from '../pages/anonymous-list/anonymous-list';
@@ -29,17 +29,11 @@ export class MyApp {
       if (!user) {
         this.rootPage = LandingPage;
         unsubscribe();
-      // } else {
-      //   unsubscribe();
-      //   this.rootPage = TabsPage;
+      } else {
+        unsubscribe();
+        this.rootPage = TabsPage;
       }
     });
-
-    // firebase.auth().onAuthStateChanged((user) => {
-    //   if (!user) {
-    //     this.rootPage = LoginPage;
-    //   }
-    // });
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Home Page
+      Menu
     </ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="goToProfile()">
@@ -60,17 +60,15 @@
   </button>
 </ion-content>
 
-<ion-footer>
+<ion-footer [hidden]="loggedin">
   <ion-toolbar>
-    <ion-grid>
-      <ion-row>
-        <ion-col width-50>
-          <button (click)="goToLogin()" ion-button clear small full>Log In</button>
-        </ion-col>
-        <ion-col width-50>
-          <button (click)="goToSignup()" ion-button clear small full>Sign Up</button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <ion-segment>
+      <ion-col width-50>
+        <button (click)="goToLogin()" ion-button outline full>LOGIN</button>
+      </ion-col>
+      <ion-col width-50>
+        <button (click)="goToSignup()" ion-button outline full>SIGN UP</button>
+      </ion-col>
+    </ion-segment>
   </ion-toolbar>
 </ion-footer>

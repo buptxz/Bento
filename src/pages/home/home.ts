@@ -23,6 +23,7 @@ export class HomePage {
 
   public quantities;
   public menuList: any;
+  public loggedin: any;
 
   constructor(public navCtrl: NavController, public data: Data, public authData: AuthData){
 
@@ -64,22 +65,6 @@ export class HomePage {
     this.data.addToCart(item);
   }
 
-  ionViewDidLoad() {
-    this.quantities = [
-      {title: "1"},
-      {title: "2"},
-      {title: "3"},
-      {title: "4"},
-      {title: "5"},
-      {title: "6"},
-      {title: "7"}
-    ];
-    // this.menus = [
-    //   {title: "Kung-Pao Chicken", price: "8", image: "https://firebasestorage.googleapis.com/v0/b/bento-c52af.appspot.com/o/IMG_0016.JPG?alt=media&token=7366ec91-aa92-40af-ad59-81b661a9c748"},
-    //   {title: "Jianbing Guozi", price: "4", image: "https://firebasestorage.googleapis.com/v0/b/bento-c52af.appspot.com/o/kung-pao-chicken.jpg?alt=media&token=87de86a4-fb96-4a7c-8ecc-c5851c8b35b1"}
-    // ];
-  }
-
   goToLogin() {
     this.navCtrl.push(LoginPage);
   }
@@ -87,4 +72,5 @@ export class HomePage {
   goToSignup() {
     this.navCtrl.push(SignupPage);
   }
+
 }

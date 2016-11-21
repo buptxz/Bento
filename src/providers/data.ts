@@ -97,4 +97,5 @@ export class Data {
     }
     this.cart.remove();
   }
+
 }
